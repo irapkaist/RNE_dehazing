@@ -1,0 +1,8 @@
+<launch>
+    <!--play ros bag-->
+    <node pkg="RNE_dehazing" name="RNE_dehazing" type="RNE_dehazing" output="screen">
+        <param name="sub_name" type="string" value="/zed/left/image_raw_color"/>        
+        <param name="clip_limit" type="int" value="10"/>
+        <param name="box_size" type="int" value="8"/>        
+    </node>
+</launch>
